@@ -4,8 +4,8 @@ import axios from 'axios';
 import { ethers } from 'ethers';
 
 import { marketContractAddress, nftContractAddress } from '../utils/contract-addresses';
-import NFT from '../smartContracts/artifacts/contracts/NFT.sol/NFT.json';
-import Market from '../smartContracts/artifacts/contracts/Market.sol/Market.json';
+import NFT from '../utils/NFT.json';
+import Market from '../utils/Market.json';
 
 const MyDashboard = () => {
 

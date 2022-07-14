@@ -7,8 +7,8 @@ import { useRouter } from 'next/router';
 const client = new IPFS({ host: 'ipfs.infura.io', port: 5001, protocol: 'https' });
 
 import { marketContractAddress, nftContractAddress } from '../utils/contract-addresses';
-import NFT from '../smartContracts/artifacts/contracts/NFT.sol/NFT.json';
-import Market from '../smartContracts/artifacts/contracts/Market.sol/Market.json';
+import NFT from '../utils/NFT.json';
+import Market from '../utils/Market.json';
 
 const ConnectedComponet2 = () => {
 
