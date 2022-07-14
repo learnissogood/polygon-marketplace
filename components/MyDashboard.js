@@ -106,7 +106,7 @@ const MyDashboard = () => {
               </div>
             </div>
           )}
-          {sold.length && (
+          {sold.length > 0 && (
             <div className='mt-80'>
               <h1 className='text-bold text-3xl mt-[-200px] mb-[20px]'>Sold Items</h1>
               <div style={{ maxWidth: '1500px' }}>
