@@ -1,7 +1,14 @@
-import '../styles/globals.css'
+import '../styles/globals.css';
+import 'antd/dist/antd.css';
+import React, { useEffect, useState } from 'react';
+import { MarketplaceProvider } from '../context/MarketplaceContext';
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+function Marketplace({ Component, pageProps }) {
+  return (
+    <MarketplaceProvider>
+      <Component {...pageProps} />
+    </MarketplaceProvider>
+  )
 }
 
-export default MyApp
+export default Marketplace
